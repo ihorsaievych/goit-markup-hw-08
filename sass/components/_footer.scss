@@ -1,0 +1,122 @@
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--geo {
+      color: var(--tagline-color);
+    }
+  }
+}
+
+.our-soc {
+  margin-left: 70px;
+  margin-right: 94px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }      
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.distribution {
+  width: 570px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label {
+    margin-right: 12px;
+    width: 100%;
+  }  
+  &__input {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 15px;
+    color: var(--main-backgroundcolor);
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: rgba(255, 255, 255, 0.6);
+    }    
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--btn-accent-backgroundcolor);
+    }
+  }
+  &__icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}
+
+.footer {
+    background-color: var(--tagline-backgroundcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &-brand-link {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+  }

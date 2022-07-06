@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color: var(--main-backgroundcolor);
+  }
+  
+  a:focus,
+  button:focus {
+    outline-color: var(--accent-color);
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,37 @@
+.strengths {
+    padding-top: 94px;
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+    &__item:not(:last-child) {
+      margin-right: var(--typical-distance);
+      max-width: 270px;
+    }
+    &__accent {
+      border-radius: 4px;
+      border: none;
+      background-color: var(--accent-backgroundcolor);
+      width: 270px;
+      height: 120px;
+      margin-bottom: var(--typical-distance);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__about {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--main-color);
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
+      color: var(--second-color);
+    }
+  }
+  
+  

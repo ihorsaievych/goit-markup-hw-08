@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="goit-markup-hw-01" content="homework goit-markup-hw-01" />
+    <title>WEBСтудия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <!--navigation link-->
+        <nav class="header__nav">
+          <a href="./index.html" lang="en" class="brand-link link">
+            <span class="brand-text-onehalf">Web</span
+            ><span class="brand-text-twohalf">Studio</span>
+          </a>
+          <ul class="header__list list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link link">Студия</a>
+            </li>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link header__currentlink link">Портфолио</a>
+            </li>
+            <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts list">
+          <li class="header__item header__item--muting">
+            <a href="mailto:info@devstudio.com" class="header__link header__link--contact link">
+              <svg class="header__icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="tel:+380961111111" class="header__link header__link--contact link"
+              ><svg class="header__icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <div class="filter">
+            <h1 class="filter__title visually-hidden">Портфолио</h1>
+
+            <ul class="filters list">
+              <li class="filters__item"><button type="button" class="filters__button">Все</button></li>
+              <li class="filters__item">
+                <button type="button" class="filters__button">Веб-сайты</button>
+              </li>
+              <li class="filters__item">
+                <button type="button" class="filters__button">Приложения</button>
+              </li>
+              <li class="filters__item">
+                <button type="button" class="filters__button">Дизайн</button>
+              </li>
+              <li class="filters__item">
+                <button type="button" class="filters__button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quod
+                    necessitatibus laboriosam odio mollitia quisquam neque in, sed esse cum ducimus,
+                    sit fuga debitis, atque molestias ipsam corporis corrupti quas deserunt
+                    voluptates magni consequatur vero. Repellat ipsam vel saepe!
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="gallery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis facere
+                    magnam rem dignissimos maiores accusantium, officia ipsam sapiente, error
+                    aspernatur, dolores voluptatem molestias provident temporibus. Aperiam dolorum
+                    tempore expedita ea pariatur ad distinctio, at adipisci recusandae magni, odio
+                    consequuntur?
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="gallery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore optio
+                    dignissimos quo? Culpa, officia error?
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="gallery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corporis.
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="gallery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-6.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores in
+                    voluptates voluptate rerum corporis nobis, harum qui deleniti molestias minus
+                    autem dolores perferendis atque dicta vel. Vero officiis rem a nulla ea
+                    doloribus animi.
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">
+                    <span lang="en">Inspiration has no Borders</span>
+                  </h2>
+                  <p class="gallery__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cupiditate culpa
+                    dicta et consectetur perferendis quos, maiores officiis illo labore nostrum
+                    quasi molestiae voluptatibus tempore earum exercitationem pariatur enim dolorum.
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="gallery__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                    consequuntur ipsam excepturi, fugiat cumque earum perspiciatis nihil
+                    necessitatibus vel ratione!
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="gallery__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="gallery__slide">
+                  <img
+                    src="./images/gallery/portfolio-gallery-9.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery__about">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt!
+                  </p>
+                </div>
+                <div class="gallery__content">
+                  <h2 class="gallery__title"><span lang="en">Growing Business</span></h2>
+                  <p class="gallery__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <a href="./index.html" lang="en" class="footer-brand-link link"
+            ><span class="brand-text-onehalf">Web</span
+            ><span class="brand-text-twohalf-second">Studio</span></a
+          >
+          <address class="footer-address">
+            <ul class="address list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/UJ2vtWxeUtUVGGgd9"
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  class="address__link address__link--geo link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__link link">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="our-soc">
+          <h2 class="our-soc__title">Присоединяйтесь</h2>
+          <ul class="our-soc__list list">
+            <li class="our-soc__item">
+              <a href="" class="our-soc__link link">
+                <svg class="our-soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-soc__item">
+              <a href="" class="our-soc__link link">
+                <svg class="our-soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-soc__item">
+              <a href="" class="our-soc__link link"
+                ><svg class="our-soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-soc__item">
+              <a href="" class="our-soc__link link">
+                <svg class="our-soc__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="distribution">
+          <p class="distribution__title">Подпишитесь на рассылку</p>
+          <form  class="distribution__form">
+          <label class="distribution__label">
+            <input type="email" name="add-email-to-distribution" placeholder="E-mail" class="distribution__input" required>
+          </label>
+          <button type="submit" class="btn-fixed distribution__btn">
+            Подписаться
+            <svg class="distribution__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

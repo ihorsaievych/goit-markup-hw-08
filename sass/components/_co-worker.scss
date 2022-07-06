@@ -1,0 +1,82 @@
+.co-worker {
+    background-color: var(--accent-backgroundcolor);
+    padding: 94px 0;
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      color: var(--main-color);
+      margin-bottom: 50px;
+    }
+}
+
+.employees {
+  display: flex;
+
+  &__item {
+    width: 270px;
+    height: 428px;
+    background-color: var(--main-backgroundcolor);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    &:not(:last-child) {
+      margin-right: var(--typical-distance);
+    }
+  }
+  &__comment {
+    padding-top: var(--typical-distance);
+    padding-bottom: var(--typical-distance);
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 16px;
+  }
+}
+
+.soc {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-backgroundcolor);
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: var(--main-backgroundcolor);
+    margin-left: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: currentColor;
+  }   
+  &__icon {
+    fill: currentColor;
+  } 
+}
