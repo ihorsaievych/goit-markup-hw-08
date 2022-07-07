@@ -1,33 +1,61 @@
 .co-worker {
     background-color: var(--accent-backgroundcolor);
-    padding: 94px 0;
+    padding-top: 60px;
+    @include desktop {
+      padding-top: 94px;
+    }
+
     &__title {
       font-weight: 700;
-      font-size: 36px;
+      font-size: 28px;
       line-height: 1.17;
       text-align: center;
       color: var(--main-color);
-      margin-bottom: 50px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      @include desktop {
+        font-size: 36px;
+        margin-top: 94px;
+        margin-bottom: 50px;
+      }
+    }
+    & .container {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 }
 
 .employees {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--typical-distance);
 
   &__item {
-    width: 270px;
-    height: 428px;
+    width: 100%;
+    height: auto;
+    // height: 428px;
     background-color: var(--main-backgroundcolor);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    &:not(:last-child) {
-      margin-right: var(--typical-distance);
+    & img {
+      width: 100%; 
+    }  
+    @include tablet {
+      width: calc((100% - var(--typical-distance)) / 2);
+    }
+    @include desktop{
+      width: calc((100% - var(--typical-distance) * 3) / 4);
     }
   }
   &__comment {
     padding-top: var(--typical-distance);
-    padding-bottom: var(--typical-distance);
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: var(--typical-distance);  
+    }
   }
   &__title {
     font-weight: 500;

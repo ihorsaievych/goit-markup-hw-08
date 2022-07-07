@@ -1,18 +1,38 @@
 .strengths {
-    padding-top: 94px;
+    // padding-top: 94px;
+    padding-top: 60px;
+    @include desktop {
+      padding-top: 94px;
+    }
+    & .container {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     &__list {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--typical-distance);
     }
-    &__item:not(:last-child) {
-      margin-right: var(--typical-distance);
-      max-width: 270px;
+    &__item {
+      // margin-right: var(--typical-distance);
+      max-width: 100%;
+      // flex-basis: calc(100% / 1 - var(--typical-distance));
+      width: 100%;
+      @include tablet {
+        width: calc((100% - var(--typical-distance)) / 2);
+      }
+      @include desktop {
+        width: calc((100% - var(--typical-distance) * 3) / 4);
+      }
     }
     &__accent {
       border-radius: 4px;
       border: none;
       background-color: var(--accent-backgroundcolor);
-      width: 270px;
+      width: 100%;
       height: 120px;
       margin-bottom: var(--typical-distance);
       display: flex;
@@ -26,6 +46,10 @@
       text-transform: uppercase;
       color: var(--main-color);
       margin-bottom: 10px;
+      text-align: center;
+      @include tablet {
+        text-align: left;
+      }  
     }
     &__text {
       font-size: 14px;
