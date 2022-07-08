@@ -20,10 +20,13 @@
       }
     }
     & .container {
-      max-width: 100%;
-      width: 100%;
+      max-width: 100% - var(--typical-distance);
+      width: 100% - var(--typical-distance);
       padding-left: 15px;
       padding-right: 15px;
+      @include desktop {
+        max-width: 1600px;
+      }
     }
 }
 

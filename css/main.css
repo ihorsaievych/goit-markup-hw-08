@@ -46,6 +46,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -259,6 +260,7 @@ section {
 .tagline .container {
   padding: 118px 52px;
   margin: auto;
+  max-width: 100%;
 }
 @media screen and (min-width: 480px) {
   .tagline .container {
@@ -313,10 +315,15 @@ section {
   }
 }
 .strengths .container {
-  max-width: 100%;
-  width: 100%;
+  max-width: 100%-var(--typical-distance);
+  width: 100%-var(--typical-distance);
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .strengths .container {
+    max-width: 1600px;
+  }
 }
 .strengths__list {
   display: flex;
@@ -375,6 +382,7 @@ section {
 @media screen and (min-width: 1200px) {
   .about .container {
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -443,10 +451,15 @@ section {
   }
 }
 .co-worker .container {
-  max-width: 100%;
-  width: 100%;
+  max-width: 100%-var(--typical-distance);
+  width: 100%-var(--typical-distance);
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .co-worker .container {
+    max-width: 1600px;
+  }
 }
 
 .employees {

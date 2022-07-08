@@ -31,6 +31,7 @@
     & .container {
       padding: 118px 52px;
       margin: auto;
+      max-width: 100%;
       @include mobile {
         padding: 118px 60px; 
       }
