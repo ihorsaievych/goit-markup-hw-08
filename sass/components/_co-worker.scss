@@ -11,7 +11,6 @@
       line-height: 1.17;
       text-align: center;
       color: var(--main-color);
-      margin-top: 60px;
       margin-bottom: 30px;
       @include desktop {
         font-size: 36px;
@@ -20,10 +19,6 @@
       }
     }
     & .container {
-      max-width: 100% - var(--typical-distance);
-      width: 100% - var(--typical-distance);
-      padding-left: 15px;
-      padding-right: 15px;
       @include desktop {
         max-width: 1600px;
       }

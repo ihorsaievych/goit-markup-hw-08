@@ -9,7 +9,6 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/home_mob-2x.jpg);      
     }
-
     @include tablet {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/home_tblt.jpg);
@@ -18,7 +17,6 @@
         url(../images/home_tblt-2x.jpg);      
       }
     }
-
     @include desktop {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/home.jpg);
@@ -31,7 +29,6 @@
     & .container {
       padding: 118px 52px;
       margin: auto;
-      max-width: 100%;
       @include mobile {
         padding: 118px 60px; 
       }
@@ -42,6 +39,8 @@
         padding: 200px 0;
         max-width: 1600px;
         max-height: 600px;
+        overflow: hidden;
+        background-size: contain;
      }
     }
 

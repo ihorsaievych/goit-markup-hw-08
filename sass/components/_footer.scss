@@ -1,6 +1,50 @@
-.address {
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
+.footer {
+
+  background-color: var(--tagline-backgroundcolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-brand-link {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 60px;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @include tablet {
+      width: calc((100% - 60px) / 2);
+    }
+    @include desktop {
+      justify-content: start;
+      align-items: unset;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    @include desktop {
+      justify-content: start;
+    }
   }
   &__link {
     line-height: 1.71;
@@ -17,19 +61,41 @@
 }
 
 .our-soc {
-  margin-left: 70px;
-  margin-right: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 60px) / 2) ;
+  }
+  @include desktop {
+    // margin-left: 70px;
+    // margin-right: 94px;
+    justify-content: start;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    // margin-bottom: 20px;
+    @include desktop {
+      text-align: inherit;
+    }
   }
   &__list{
     display: flex;
     justify-content: center;
+    width: 100%;
+    @include desktop {
+      justify-content: start;
+    }
   }
   &__item {
     margin-left: 10px;
@@ -58,21 +124,41 @@
 }
 
 .distribution {
-  width: 570px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  @include desktop {
+    flex-grow: 2;
+    min-width: 570px;
+    width: 570px;
+  }
+  
   &__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    @include desktop {
+      text-align: inherit;
+    }
   }
   &__form {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px  12px;
+    @include desktop {
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: nowrap;
+    }
   }
   &__label {
-    margin-right: 12px;
     width: 100%;
   }  
   &__input {
@@ -106,17 +192,3 @@
     margin-left: 10px;
   }
 }
-
-.footer {
-    background-color: var(--tagline-backgroundcolor);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    &-brand-link {
-      display: block;
-      margin-bottom: 20px;
-    }
-    .container {
-      display: flex;
-      align-items: baseline;
-    }
-  }

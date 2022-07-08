@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="goit-markup-hw-01" content="homework goit-markup-hw-01" />
+    <meta name="goit-markup-hw-08" content="homework goit-markup-hw-08" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBСтудия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,13 +23,11 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header page-header--fixed" data-page-header>
       <div class="container">
-        <!--navigation link-->
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="brand-link link">
-            <span class="brand-text-onehalf">Web</span
-            ><span class="brand-text-twohalf">Studio</span>
+            <span class="brand-text-onehalf">Web</span><span class="brand-text-twohalf">Studio</span>
           </a>
           <ul class="header__list list">
             <li class="header__item">
@@ -39,6 +38,11 @@
             </li>
             <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
           </ul>
+          <button type="button" class="header__btn menu-open-btn">
+            <svg class="header__icon">
+              <use href="./images/icons.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="header__contacts list">
           <li class="header__item header__item--muting">
@@ -58,6 +62,52 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="menu-mob is-hidden">
+        <div class="container">
+          <button type="button" class="menu-mob__btn">
+            <svg class="menu-mob__icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-mob__list list">
+            <li class="menu-mob__item">
+              <a href="./index.html" class="menu-mob__link menu-mob__link--menu link">Студия</a>
+            </li>
+            <li class="menu-mob__item">
+              <a href="./portfolio.html" class="menu-mob__link menu-mob__link--menu menu-mob__link--accent link">Портфолио</a>
+            </li>
+            <li class="menu-mob__item"><a href="" class="menu-mob__link menu-mob__link--menu link">Контакты</a></li>
+          </ul>
+          <ul class="menu-mob__list menu-mob__list--distace list">
+            <li class="menu-mob__item">
+              <a href="tel:+380961111111" class="menu-mob__link menu-mob__link--tel menu-mob__link--accent link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-mob__item header__item--muting">
+              <a href="mailto:info@devstudio.com" class="menu-mob__link menu-mob__link--email menu-mob__link--muting link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <div class="menu-mob__soc">
+            <ul class="menu-mob__list menu-mob__list--row list">
+              <li class="menu-mob__item">
+                <a href="" class="menu-mob__link menu-mob__link--social menu-mob__link--accent link">Instagram</a>
+              </li>
+              <li class="menu-mob__item">
+                <a href="" class="menu-mob__link menu-mob__link--social menu-mob__link--accent link">Twitter</a>
+              </li>
+              <li class="menu-mob__item">
+                <a href="" class="menu-mob__link menu-mob__link--social menu-mob__link--accent link">Facebook</a>
+              </li>
+              <li class="menu-mob__item">
+                <a href="" class="menu-mob__link menu-mob__link--social menu-mob__link--accent link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -88,12 +138,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-1.jpg 1x,
+                    ./images/gallery/portfolio-gallery-1-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-1_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-1_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-1_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-1_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-1_mob.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -109,12 +170,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-2.jpg 1x,
+                    ./images/gallery/portfolio-gallery-2-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-2_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-2_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-2_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-2_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-2_mob.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quod
                     necessitatibus laboriosam odio mollitia quisquam neque in, sed esse cum ducimus,
@@ -133,12 +205,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-3.jpg 1x,
+                    ./images/gallery/portfolio-gallery-3-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-3_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-3_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-3_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-3_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-3_mob.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis facere
                     magnam rem dignissimos maiores accusantium, officia ipsam sapiente, error
@@ -156,12 +239,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-4.jpg 1x,
+                    ./images/gallery/portfolio-gallery-4-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-4_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-4_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-4_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-4_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-4_mob.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore optio
                     dignissimos quo? Culpa, officia error?
@@ -176,12 +270,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-5.jpg 1x,
+                    ./images/gallery/portfolio-gallery-5-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-5_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-5_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-5_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-5_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-5_mob.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corporis.
                   </p>
@@ -195,12 +300,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-6.jpg 1x,
+                    ./images/gallery/portfolio-gallery-6-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-6_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-6_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-6_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-6_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-6_mob.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores in
                     voluptates voluptate rerum corporis nobis, harum qui deleniti molestias minus
@@ -219,12 +335,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-7.jpg 1x,
+                    ./images/gallery/portfolio-gallery-7-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-7_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-7_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-7_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-7_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-7_mob.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cupiditate culpa
                     dicta et consectetur perferendis quos, maiores officiis illo labore nostrum
@@ -240,12 +367,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-8.jpg 1x,
+                    ./images/gallery/portfolio-gallery-8-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-8_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-8_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-8_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-8_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-8_mob.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
                     consequuntur ipsam excepturi, fugiat cumque earum perspiciatis nihil
@@ -261,12 +399,23 @@
             <li class="gallery__item">
               <a href="" class="gallery__link link">
                 <div class="gallery__slide">
-                  <img
-                    src="./images/gallery/portfolio-gallery-9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/gallery/portfolio-gallery-9.jpg 1x,
+                    ./images/gallery/portfolio-gallery-9-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-9_tblt.jpg 1x,
+                    ./images/gallery/portfolio-gallery-9_tblt-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/gallery/portfolio-gallery-9_mob.jpg 1x,
+                    ./images/gallery/portfolio-gallery-9_mob-2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                    <img
+                      src="./images/gallery/portfolio-gallery-9_mob.jpg"
+                      alt="Growing Business"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                   <p class="gallery__about">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt!
                   </p>
@@ -284,27 +433,27 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-contacts">
+        <div class="footer__contacts">
           <a href="./index.html" lang="en" class="footer-brand-link link"
             ><span class="brand-text-onehalf">Web</span
             ><span class="brand-text-twohalf-second">Studio</span></a
           >
-          <address class="footer-address">
-            <ul class="address list">
-              <li class="address__item">
+          <address class="footer__address">
+            <ul class="footer__list list">
+              <li class="footer__item">
                 <a
                   href="https://goo.gl/maps/UJ2vtWxeUtUVGGgd9"
                   target="_blank"
                   rel="noreferrer nofollow noopener"
-                  class="address__link address__link--geo link"
+                  class="footer__link footer__link--geo link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link link">info@example.com</a>
+              <li class="footer__item">
+                <a href="mailto:info@example.com" class="footer__link link">info@example.com</a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+              <li class="footer__item">
+                <a href="tel:+380991111111" class="footer__link link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -358,5 +507,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

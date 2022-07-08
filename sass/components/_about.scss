@@ -6,10 +6,8 @@
   }
 }
 
-@include desktop {
-  .about {
-    padding-top: 94px;
-  }
+.about.section {
+  padding: 0;
 }
 
 .about-title {

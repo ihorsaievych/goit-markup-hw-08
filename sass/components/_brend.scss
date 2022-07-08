@@ -1,13 +1,18 @@
 .brand-link {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-  
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding: 16px 15px;
+  @include tablet {
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-right: 88px;
+  } 
+  @include desktop {
     margin-right: 93px;
-  }
+  } 
+}
   
   .brand-text-onehalf {
     color: var(--brand-color-one);

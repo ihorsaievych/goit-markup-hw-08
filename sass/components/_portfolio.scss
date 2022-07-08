@@ -1,15 +1,28 @@
 .portfolio {
+  padding-top: 60px;
+  @include desktop {
     padding-top: 94px;
   }
+}
   
   /* -------------FILTER----------- */
   
   .filters {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    &__item:not(:last-child) {
-      margin-right: 8px;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 30px;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    @include desktop {
+      margin-bottom: 50px;
+    }
+    &__item {
+      // margin-right: 8px;
     }
     &__button {
       font-family: inherit;
@@ -43,12 +56,17 @@
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(var(--typical-distance) / 2);
+    gap: var(--typical-distance);
     border-top: none;
     &__link {
+      width: 100%;
       box-shadow: none;
       display: block;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      max-width: 450px;
+      @include tablet {
+
+      }
       &:hover,
       &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -56,8 +74,17 @@
       }
     }
     &__item {
-      flex-basis: calc(100% / 3 - var(--typical-distance));
+      width: 100%;
+      @include tablet {
+        width: calc( (100% - var(--typical-distance) * 1) / 2);
+      }
+      @include desktop {
+        width: calc( (100% - var(--typical-distance) * 2) / 3);
+      }
       // margin: calc(var(--typical-distance) / 2);
+      & img {
+        width: 100%; 
+      }
     }
     &__content {
       padding: 20px 24px;
