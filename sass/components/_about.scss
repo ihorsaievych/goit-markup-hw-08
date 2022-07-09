@@ -2,7 +2,10 @@
   display: none;
   @include desktop {
     display: block;
-    margin: 0 auto;
+    padding: 60px 0;
+    @include desktop {
+      padding: 94px 0;
+    }    
   }
 }
 

@@ -1,8 +1,8 @@
 .co-worker {
     background-color: var(--accent-backgroundcolor);
-    padding-top: 60px;
+    padding: 60px 0;
     @include desktop {
-      padding-top: 94px;
+      padding: 94px 0;
     }
 
     &__title {
@@ -14,13 +14,7 @@
       margin-bottom: 30px;
       @include desktop {
         font-size: 36px;
-        margin-top: 94px;
         margin-bottom: 50px;
-      }
-    }
-    & .container {
-      @include desktop {
-        max-width: 1600px;
       }
     }
 }
@@ -32,8 +26,6 @@
 
   &__item {
     width: 100%;
-    height: auto;
-    // height: 428px;
     background-color: var(--main-backgroundcolor);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.14),

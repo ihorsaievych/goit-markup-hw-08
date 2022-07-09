@@ -1,13 +1,7 @@
 .strengths {
-    // padding-top: 94px;
-    padding-top: 60px;
+    padding: 60px 0;
     @include desktop {
-      padding-top: 94px;
-    }
-    & .container {
-      @include desktop {
-        max-width: 1600px;
-      }
+      padding: 94px 0;
     }
     &__list {
       display: flex;
@@ -16,9 +10,6 @@
       gap: var(--typical-distance);
     }
     &__item {
-      // margin-right: var(--typical-distance);
-      max-width: 100%;
-      // flex-basis: calc(100% / 1 - var(--typical-distance));
       width: 100%;
       @include tablet {
         width: calc((100% - var(--typical-distance)) / 2);

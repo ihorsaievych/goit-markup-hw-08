@@ -12,19 +12,15 @@
   }    
 }
 
-.section {
-  padding-bottom: 60px;
-  @include desktop {
-    padding-bottom: 94px;
-  }
-}
+// .section {
+
+// }
   
 .container {
-  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  // width: 100%;
+  width: 100%;
   @include mobile {
     width: 480px;
   }  
@@ -32,10 +28,8 @@
     width: 768px;
   }
   @include desktop { 
-    max-width: 1200px;
-    width: 1200px;
     padding: 0 15px;
-
+    width: 1200px;
   }
 }
   
