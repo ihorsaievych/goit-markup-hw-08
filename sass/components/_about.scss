@@ -1,17 +1,14 @@
-.about .container {
+.about {
   display: none;
   @include desktop {
     display: block;
-    padding: 60px 0;
+    padding-bottom: 60px;
     @include desktop {
-      padding: 94px 0;
+      padding-bottom: 94px;
     }    
   }
 }
 
-.about.section {
-  padding: 0;
-}
 
 .about-title {
   font-weight: 700;
